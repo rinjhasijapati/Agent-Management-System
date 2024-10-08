@@ -87,10 +87,10 @@ const handleAgentsClick = () => {
 
                     <Collapse in={openAgents} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
-                            <ListItemButton component={RouterLink} to="/view-agents" sx={{ pl: 4 }}>
+                            <ListItemButton component={RouterLink} to="/agents/view" sx={{ pl: 4 }}>
                                 <ListItemText primary="View All" />
                             </ListItemButton>
-                            <ListItemButton component={RouterLink} to="/add-agent" sx={{ pl: 4 }}>
+                            <ListItemButton component={RouterLink} to="/agents/create" sx={{ pl: 4 }}>
                                 <ListItemText primary="Add" />
                             </ListItemButton>
                         </List>
@@ -115,10 +115,10 @@ const handleAgentsClick = () => {
 
                             <Collapse in={openCountry} timeout="auto" unmountOnExit>
                                 <List component="div" disablePadding>
-                                    <ListItemButton component={RouterLink} to="/" sx={{ pl: 8 }}>
+                                    <ListItemButton component={RouterLink} to="/countries/view" sx={{ pl: 8 }}>
                                         <ListItemText primary="View All" />
                                     </ListItemButton>
-                                    <ListItemButton sx={{ pl: 8 }}>
+                                    <ListItemButton component={RouterLink} to="/countries/create" sx={{ pl: 8 }}>
                                         <ListItemText primary="Add" />
                                     </ListItemButton>
                                 </List>
@@ -131,17 +131,11 @@ const handleAgentsClick = () => {
 
                             <Collapse in={openArea} timeout="auto" unmountOnExit>
                                 <List component="div" disablePadding>
-                                    <ListItemButton component={RouterLink} to="/add-area" sx={{ pl: 8 }}>
-                                        <ListItemText primary="Add" />
-                                    </ListItemButton>
-                                    <ListItemButton component={RouterLink} to="/update-area/:id" sx={{ pl: 8 }}>
-                                        <ListItemText primary="Update" />
-                                    </ListItemButton>
-                                    <ListItemButton component={RouterLink} to="/delete-area/:id" sx={{ pl: 8 }}>
-                                        <ListItemText primary="Delete" />
-                                    </ListItemButton>
-                                    <ListItemButton component={RouterLink} to="/view-area" sx={{ pl: 8 }}>
+                                    <ListItemButton component={RouterLink} to="/areas/view" sx={{ pl: 8 }}>
                                         <ListItemText primary="View All" />
+                                    </ListItemButton>
+                                    <ListItemButton component={RouterLink} to="/areas/create" sx={{ pl: 8 }}>
+                                        <ListItemText primary="Add" />
                                     </ListItemButton>
                                 </List>
                             </Collapse>
@@ -153,17 +147,11 @@ const handleAgentsClick = () => {
 
                             <Collapse in={openMain} timeout="auto" unmountOnExit>
                                 <List component="div" disablePadding>
-                                    <ListItemButton sx={{ pl: 8 }}>
-                                        <ListItemText primary="Add" />
-                                    </ListItemButton>
-                                    <ListItemButton sx={{ pl: 8 }}>
-                                        <ListItemText primary="Update" />
-                                    </ListItemButton>
-                                    <ListItemButton sx={{ pl: 8 }}>
-                                        <ListItemText primary="Delete" />
-                                    </ListItemButton>
-                                    <ListItemButton sx={{ pl: 8 }}>
+                                    <ListItemButton component={RouterLink} to="/main-locations/view" sx={{ pl: 8 }}>
                                         <ListItemText primary="View All" />
+                                    </ListItemButton>
+                                    <ListItemButton component={RouterLink} to="/main-locations/create" sx={{ pl: 8 }}>
+                                        <ListItemText primary="Add" />
                                     </ListItemButton>
                                 </List>
                             </Collapse>
@@ -175,17 +163,11 @@ const handleAgentsClick = () => {
 
                             <Collapse in={openSub} timeout="auto" unmountOnExit>
                                 <List component="div" disablePadding>
-                                    <ListItemButton sx={{ pl: 8 }}>
-                                        <ListItemText primary="Add" />
-                                    </ListItemButton>
-                                    <ListItemButton sx={{ pl: 8 }}>
-                                        <ListItemText primary="Update" />
-                                    </ListItemButton>
-                                    <ListItemButton sx={{ pl: 8 }}>
-                                        <ListItemText primary="Delete" />
-                                    </ListItemButton>
-                                    <ListItemButton sx={{ pl: 8 }}>
+                                    <ListItemButton component={RouterLink} to="/sub-locations/view" sx={{ pl: 8 }}>
                                         <ListItemText primary="View All" />
+                                    </ListItemButton>
+                                    <ListItemButton component={RouterLink} to="/sub-locations/create" sx={{ pl: 8 }}>
+                                        <ListItemText primary="Add" />
                                     </ListItemButton>
                                 </List>
                             </Collapse>

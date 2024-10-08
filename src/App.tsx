@@ -12,8 +12,6 @@ import ViewAreasPage from "./Pages/Locations/Area/ViewAreasPage.tsx";
 import DeleteAreaPage from "./Pages/Locations/Area/DeleteAreaPage.tsx";
 import UpdateAreaPage from "./Pages/Locations/Area/UpdateAreaPage.tsx";
 import AddCountryPage from "./Pages/Locations/Country/AddCountryPage.tsx";
-import UpdateCountryPage from "./Pages/Locations/Country/UpdateCountryPage.tsx";
-import DeleteCountryPage from "./Pages/Locations/Country/DeleteCountryPage.tsx";
 import ViewCountriesPage from "./Pages/Locations/Country/ViewCountriesPage.tsx";
 import AddMainLocationPage from "./Pages/Locations/MainLocation/AddMainLocationPage.tsx";
 import UpdateMainLocationPage from "./Pages/Locations/MainLocation/UpdateMainLocationPage.tsx";
@@ -34,26 +32,24 @@ const App = () => {
                     <Route element={<ProtectedRoutes/>}>
                         <Route path='/' element={<DashboardLayout />}>
                             <Route path="/" element={<Home/>}  />
-                            <Route path="/add-agent" element={<AddAgentPage />} />
-                            <Route path="/update-agent/:id" element={<UpdateAgentPage />} />
-                            <Route path="/delete-agent/:id" element={<DeleteAgentPages />} />
-                            <Route path="/view-agents" element={<ViewAgentsPage />} />
-                            <Route path="/add-area" element={<AddAreaPage />} />
-                            <Route path="/update-area/:id" element={<UpdateAreaPage />} />
-                            <Route path="/delete-area/:id" element={<DeleteAreaPage />} />
-                            <Route path="/view-areas" element={<ViewAreasPage />} />
-                            <Route path="/add-country" element={<AddCountryPage />} />
-                            <Route path="/update-country/:id" element={<UpdateCountryPage />} />
-                            <Route path="/delete-country/:id" element={<DeleteCountryPage />} />
-                            <Route path="/view-countries" element={<ViewCountriesPage />} />
-                            <Route path="/add-main-location" element={<AddMainLocationPage />} />
-                            <Route path="/update-main-location/:id" element={<UpdateMainLocationPage />} />
-                            <Route path="/delete-main-location/:id" element={<DeleteMainLocationPage />} />
-                            <Route path="/view-main-locations" element={<ViewMainLocationsPage />} />
-                            <Route path="/add-sub-location" element={<AddSubLocationPage />} />
-                            <Route path="/update-sub-location/:id" element={<UpdateSubLocationPage />} />
-                            <Route path="/delete-sub-location/:id" element={<DeleteSubLocationPage />} />
-                            <Route path="/view-sub-locations" element={<ViewSubLocationsPage />} />
+                            <Route path="/agents/create" element={<AddAgentPage />} />
+                            <Route path="/agent/:id/update" element={<UpdateAgentPage />} />
+                            <Route path="/agent/:id/delete" element={<DeleteAgentPages />} />
+                            <Route path="/agents/view" element={<ViewAgentsPage />} />
+                            <Route path="/areas/create" element={<AddAreaPage />} />
+                            <Route path="/area/:id/update" element={<UpdateAreaPage />} />
+                            <Route path="/area/:id/delete" element={<DeleteAreaPage />} />
+                            <Route path="/areas/view" element={<ViewAreasPage />} />
+                            <Route path="/countries/create" element={<AddCountryPage />} />
+                            <Route path="/countries/view" element={<ViewCountriesPage />} />
+                            <Route path="/main-locations/create" element={<AddMainLocationPage />} />
+                            <Route path="/main-location/:id/update" element={<UpdateMainLocationPage />} />
+                            <Route path="/main-location/:id/delete" element={<DeleteMainLocationPage />} />
+                            <Route path="/main-locations/view" element={<ViewMainLocationsPage />} />
+                            <Route path="/sub-locations/create" element={<AddSubLocationPage />} />
+                            <Route path="/sub-location/:id/update" element={<UpdateSubLocationPage />} />
+                            <Route path="/sub-location/:id/delete" element={<DeleteSubLocationPage />} />
+                            <Route path="/sub-locations/view" element={<ViewSubLocationsPage />} />
                         </Route>
                     </Route>
                 </Routes>

@@ -21,11 +21,9 @@ const Login = () => {
     const [loginUser, {isLoading}] = useLoginUserMutation();
     const [fetchUser] = useLazyDisplayUserQuery();
 
-    // Retrieve user from Redux state
     const user = useSelector((state: RootState) => state.auth.user);
 
     useEffect(() => {
-        // If user is already logged in, redirect to home
         if (user) {
             navigate('/');
         }
